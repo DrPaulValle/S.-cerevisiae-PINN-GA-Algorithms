@@ -1,0 +1,2 @@
+TOTAL elapsed time: 3146.066851 seconds
+TOTAL elapsed time: 52.434448 minutes
