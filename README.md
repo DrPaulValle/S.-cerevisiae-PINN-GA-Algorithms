@@ -202,21 +202,5 @@ If you use or adapt this repository, please cite the associated manuscript.
 
 A formal citation will be added after publication.
 
-```bibtex
-@article{Valle2026MechanisticInverseProblems,
-  title   = {Mechanistic Nonlinear Dynamical Modeling for Parameter Estimation:
-             A Comparison of Physics Informed Neural Networks and Genetic Algorithms},
-  author  = {Valle, Paul A. and Salazar, Yolocuauhtli and
-             P{\'a}ez-Lerma, Jesus B. and Soto-Cruz, N. Oscar and
-             Coria, Luis N. and Garc{\'i}a, Iv{\'a}n A. and
-             Gonz{\'a}lez-Campos, Michell V.},
-  year    = {2026},
-  note    = {Manuscript under review}
-}
-```
+Valle, P. A., Salazar, Y., Coria, L. N., & Garcia, I. A. (2026). Mechanistic Nonlinear Dynamical Modeling for Parameter Estimation: S.cerevisiae (Version 1.0) [Computer software]. hhttps://github.com/DrPaulValle/PINN-and-GA-Algorithms/
 
----
-
-## License
-
-No software license is specified in this README. Before public release, add a `LICENSE` file defining the terms under which the source code and data may be reused.
