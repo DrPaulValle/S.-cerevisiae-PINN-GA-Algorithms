@@ -1,0 +1,5 @@
+n_seeds: 100
+base_seed: 130425
+completed_runs: 1000
+TOTAL elapsed time: 90247.745008 seconds
+TOTAL elapsed time: 1504.129083 minutes
