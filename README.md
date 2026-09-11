@@ -76,7 +76,7 @@ The experimental study contains ten fermentation conditions spanning initial tot
 | Setting | Value |
 |---|---|
 | Framework | TensorFlow |
-| Python | 3.10 |
+| Python | 3.12 |
 | Architecture | $(1,128,128,128,5)$ |
 | Hidden activation | `tanh` |
 | Learning rate | $10^{-4}$ |
