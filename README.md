@@ -39,16 +39,7 @@ The repository also contains the computational analyses used to assess robustnes
 The fermentation model is written as the autonomous ODE system
 
 $$
-\frac{dw}{dt}
-=
-\left(
-\rho_1
-+
-\rho_3\frac{x+y}{x_0+y_0}
-\right)
-w e^{-\rho_2 W}
--
-\rho_4 w,
+\frac{dw}{dt} = \left(\rho_1 + \rho_3\frac{x+y}{x_0+y_0} \right) w e^{-\rho_2 W} - \rho_4 w,
 $$
 
 $$
