@@ -43,25 +43,18 @@ $$
 $$
 
 $$
-\frac{dW}{dt}=w,
+\frac{dW}{dt} = w,
 $$
 
 $$
-\frac{dx}{dt}
-=
--\rho_5 xw-\rho_6 x,
+\frac{dx}{dt} = -\rho_5 xw-\rho_6 x, $$
+
+$$
+\frac{dy}{dt} = -\rho_7 yw-\rho_8 y,
 $$
 
 $$
-\frac{dy}{dt}
-=
--\rho_7 yw-\rho_8 y,
-$$
-
-$$
-\frac{dz}{dt}
-=
-\rho_9(x+y)w-\rho_{10}z.
+\frac{dz}{dt} = \rho_9(x+y)w-\rho_{10}z.
 $$
 
 Here, $w(t)$ is biomass, $W(t)$ is accumulated biomass, $x(t)$ is glucose, $y(t)$ is fructose, and $z(t)$ is ethanol.
@@ -75,42 +68,6 @@ $$
 while $\rho_4$, $\rho_6$, $\rho_8$, and $\rho_{10}$ are fixed according to the mechanistic assumptions described in the manuscript.
 
 The experimental study contains ten fermentation conditions spanning initial total hexose concentrations of **20–100 g/L** and agitation rates of **100–150 rpm**.
-
----
-
-## Suggested repository structure
-
-```text
-.
-├── LS/
-│   └── Nonlinear least-squares implementation
-│
-├── GA/
-│   └── Genetic-algorithm parameter-estimation implementation
-│
-├── PINN/
-│   └── Physics-informed neural-network implementation
-│
-├── Manuscript_Simulations_Tables/
-│   └── MATLAB notebook/live script used to reproduce manuscript
-│       simulations, figures, goodness-of-fit metrics, and tables
-│
-└── Tests/
-    ├── Time_Split/
-    │   └── Calibration through 21 h and evaluation through 30 h
-    ├── Raw_Data/
-    │   └── Parameter estimation using unsmoothed experimental data
-    ├── Stiffness/
-    │   └── Heun, ode45, and ode15s solver-comparison analyses
-    ├── Alpha_Sensitivity/
-    │   └── PINN loss-weighting analyses for alpha = 0.1 to 1.0
-    └── Seed_Robustness_100/
-        └── 100-seed PINN and GA robustness analyses
-```
-
-The final directory names can be changed without affecting the scientific workflow; paths inside scripts should be updated accordingly.
-
----
 
 ## Main computational settings
 
