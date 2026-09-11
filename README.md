@@ -127,7 +127,7 @@ All three inverse methods were also applied directly to the unsmoothed experimen
 
 ### Numerical solver dependence and stiffness check
 
-Mechanistic trajectories generated from PINN- and GA-estimated parameter sets were recomputed using Heun's method, MATLAB `ode45`, and MATLAB `ode15s`. Differences between `ode45` and `ode15s` were of the order of approximately $10^{-8}$–$10^{-6}$ over the observed states, indicating negligible solver-dependent effects over the analyzed time domain. This comparison is a numerical consistency test and is not intended as a formal proof that the system is nonstiff.
+Mechanistic trajectories generated from PINN- and GA-estimated parameter sets were recomputed using Heun's method, MATLAB `ode45`, and MATLAB `ode15s`. Differences between `ode45` and `ode15s` were of the order of approximately $10^{-8}$ – $10^{-6}$ over the observed states, indicating negligible solver-dependent effects over the analyzed time domain. This comparison is a numerical consistency test and is not intended as a formal proof that the system is nonstiff.
 
 ### PINN loss-weight sensitivity
 
