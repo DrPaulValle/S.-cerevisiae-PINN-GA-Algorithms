@@ -174,8 +174,8 @@ For the Python PINN implementation, the core environment uses TensorFlow togethe
 ## Reproducing the manuscript results
 
 1. Run the LS, GA, or PINN implementation from its corresponding directory to estimate the model parameters for the ten experimental conditions.
-2. Use the MATLAB notebook in `Manuscript_Simulations_Tables/` to reproduce the mechanistic simulations, goodness-of-fit calculations, statistical tables, and manuscript-ready outputs.
-3. Run the workflows in `Tests/` independently to reproduce the time-split, raw-data, solver-dependence, $\alpha$-sensitivity, and 100-seed robustness analyses.
+2. Use the MATLAB notebook in `Summarized manuscript results/` to reproduce the mechanistic simulations, goodness-of-fit calculations, statistical tables, and manuscript-ready outputs.
+3. Run the workflows in `Validation and robustness tests/` independently to reproduce the time-split, raw-data, solver-dependence, $\alpha$ - sensitivity, and 100-seed robustness analyses.
 4. Keep the experimental data paths and output folders consistent with the directory structure used by the scripts.
 
 Because the PINN and GA procedures are stochastic, exact computational time depends on hardware, software versions, and stopping behavior. In the computational environment used for the manuscript, one complete seed across all ten datasets required approximately 15 minutes for either PINN or GA, while the 100-seed analyses required approximately 25 h for PINN and 12 h for GA.
@@ -202,5 +202,5 @@ If you use or adapt this repository, please cite the associated manuscript.
 
 A formal citation will be added after publication.
 
-Valle, P. A., Salazar, Y., Coria, L. N., & Garcia, I. A. (2026). Mechanistic Nonlinear Dynamical Modeling for Parameter Estimation: S.cerevisiae (Version 1.0) [Computer software]. hhttps://github.com/DrPaulValle/PINN-and-GA-Algorithms/
+Valle, P. A. et al. (2026). Mechanistic Nonlinear Dynamical Modeling for Parameter Estimation: S.cerevisiae (Version 1.0) [Computer software]. hhttps://github.com/DrPaulValle/PINN-and-GA-Algorithms/
 
