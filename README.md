@@ -104,7 +104,7 @@ $$
 | Mutation rate | 0.20 |
 | Mutation scale | 0.10 |
 | Tournament size | 3 |
-| BLX-$\alpha$ | 0.35 |
+| BLX- $\alpha$ | 0.35 |
 | Local refinement | `fmincon` / SQP |
 | Base random seed | 130425 |
 | Estimated kinetic parameters | $\rho_1,\rho_2,\rho_3,\rho_5,\rho_7,\rho_9$ |
