@@ -109,8 +109,6 @@ $$
 | Base random seed | 130425 |
 | Estimated kinetic parameters | $\rho_1,\rho_2,\rho_3,\rho_5,\rho_7,\rho_9$ |
 
-The GA implementation is custom and does **not** require MATLAB's Global Optimization Toolbox. Local refinement uses MATLAB optimization routines.
-
 ---
 
 ## Validation and robustness analyses
@@ -152,24 +150,24 @@ Selected mechanistic trajectories were extended beyond the 30 h observation inte
 | Time-split validation | All mechanistic solutions retained adjusted $R^2\geq0.9750$ over the complete trajectories |
 | PINN short-horizon prediction | Lowest descriptive trajectory RSS in 5 of 10 time-split experiments |
 | Practical identifiability | $\rho_3$ was the principal recurrent weakly constrained parameter |
-| Solver dependence | State-specific `ode45` vs `ode15s` RMSE remained approximately within $10^{-8}$–$10^{-6}$ |
+| Solver dependence | State-specific `ode45` vs `ode15s` RMSE remained approximately within $10^{-8}$ – $10^{-6}$ |
 
 These results should not be interpreted as evidence that one inverse method is universally superior. Instead, the benchmark highlights complementary properties: LS provided the strongest model-based residual fit, GA the greatest stochastic reproducibility, and the direct PINN representation the greatest trajectory-level flexibility.
 
 ---
 
-## Software requirements
+## Software specifications
 
 | Software | Version |
 |---|---|
 | MATLAB | R2025b Update 5 |
-| Python | 3.10 |
+| Python | 3.12 |
 | TensorFlow | 2.21.0 |
-| Visual Studio Code | 1.136.0 |
+| Visual Studio Code | 1.137.0 |
 
 MATLAB routines that use `fmincon` or classical nonlinear least-squares solvers require the **Optimization Toolbox**. The custom GA itself does not require the **Global Optimization Toolbox**.
 
-For the Python PINN implementation, the core environment uses TensorFlow together with standard scientific-computing packages such as NumPy, pandas, SciPy, and Matplotlib. Users should verify the imports in the distributed scripts when reproducing the environment.
+For the Python PINN implementation, the core environment uses TensorFlow together with standard scientific-computing packages such as NumPy, pandas, SciPy, openpyxl, and Matplotlib. Users should verify the imports in the distributed scripts when reproducing the environment.
 
 ---
 
