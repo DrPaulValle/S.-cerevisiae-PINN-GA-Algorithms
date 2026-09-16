@@ -398,7 +398,7 @@ class ODEPINN:
         self.p10 = tf.constant(-np.log(1 - 1/100) / (30.0), dtype=tf.float32)
 
         # initial conditions
-        ic_clip = lambda v: tf.clip_by_value(v, 0.0, 100)
+        ic_clip = lambda v: tf.clip_by_value(v, 0.0, 10)
         self.w0_var = tf.Variable(1e-1, dtype=tf.float32, constraint=ic_clip, name="w0_var")
 
         self.x0_fixed = None
@@ -1026,7 +1026,7 @@ def run_all_sheets(
 if __name__ == "__main__":
     run_all_sheets(
         excel_path="data_matlab_smooth.xlsx", # Data smoothed previously in MATLAB for consistency
-        output_dir="results_PINN_alpha5", # Folder for saving results
+        output_dir="results_PINN",       # Folder for saving results
         sigma = 0.0,                     # Gaussian smoothing strength; 0 disables smoothing
         normalize = False,               # If True, scale each state by its maximum value
         epochs = 100001,                 # Maximum number of PINN training epochs
@@ -1035,7 +1035,7 @@ if __name__ == "__main__":
         W0_value = 0.0,                  # Initial cumulative biomass, W(0)=0
         dt = 0.01,                       # Time step used for prediction/Euler simulation grids
         extend_factor = 2.0,             # Extend simulation horizon to 2× the observed final time
-        alpha = 0.5,                   # Weight assigned to the physics-loss contribution
+        alpha = 0.999,                   # Weight assigned to the physics-loss contribution
         beta_ic = 0.5,                   # Weight assigned to the initial-condition loss
         lr = 1e-4,                       # Adam optimizer learning rate
         arch=(1, 128, 128, 128, 5),      # Neural-network architecture: 1 input, 3 hidden layers, 5 outputs
