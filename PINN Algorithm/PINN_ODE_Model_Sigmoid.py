@@ -399,7 +399,7 @@ class ODEPINN:
         self.p10 = tf.constant(-np.log(1 - 1/100) / (30.0), dtype=tf.float32)
 
         # initial conditions
-        ic_clip = lambda v: tf.clip_by_value(v, 0.0, 100)
+        ic_clip = lambda v: tf.clip_by_value(v, 0.0, 10)
         self.w0_var = tf.Variable(1e-1, dtype=tf.float32, constraint=ic_clip, name="w0_var")
 
         self.x0_fixed = None
