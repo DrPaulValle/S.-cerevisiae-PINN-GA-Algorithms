@@ -1,3 +1,4 @@
+[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=DrPaulValle/S)
 # Mechanistic Nonlinear Dynamical Modeling for Parameter Estimation: A Comparison of Physics Informed Neural Networks and Genetic Algorithms
 
 This repository contains the computational implementations, manuscript simulations, and robustness/validation analyses associated with the study:
