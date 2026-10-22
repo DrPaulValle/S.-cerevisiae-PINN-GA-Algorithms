@@ -202,5 +202,8 @@ If you use or adapt this repository, please cite the associated manuscript.
 
 A formal citation will be added after publication.
 
-Valle, P. A. et al. (2026). Mechanistic Nonlinear Dynamical Modeling for Parameter Estimation: S.cerevisiae (Version 1.0) [Computer software]. hhttps://github.com/DrPaulValle/PINN-and-GA-Algorithms/
+Valle Paul A., Salazar Yolocuauhtli, Paez Jesus B., Soto Nicolas O., Coria Luis N., Garcia Ivan A., Gonzalez Michelle V. Mechanistic Nonlinear Dynamical Modelling for Inverse Problems: A Comparison of Physics-Informed Neural Networks and Genetic Algorithms. Applied Mathematical Modelling 162 (2026), 117357.
+doi: 10.1016/j.apm.2026.117357
+
+Free access: https://authors.elsevier.com/a/1nxCb,703qPvAj
 
